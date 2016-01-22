@@ -6,15 +6,15 @@
 		<div>
 			<canvas id="doughnut" class="chart chart-doughnut" chart-data="languagesCount" chart-labels="languagesLabels"></canvas>
 		</div> 
-		<h2>The 5 most active repositories you contributed to</h2>
+		<h2>Your top repositories</h2>
 		<div>
-			<canvas id="bar" class="chart chart-bar" chart-data="reposCommits" chart-labels="reposNames"</canvas>
+			<canvas id="doughnut" class="chart chart-doughnut" chart-data="reposCommits" chart-labels="reposNames"></canvas>
 		</div>
 		<h2>Your true friends</h2>
 		<ul>
 			<li ng-repeat="friend in friends">{{friend}}</li>
 		</ul>
 		<h2>Your stars</h2>
-		<span ng-repeat="i in range(stars)">🌟</span>
+		<span ng-repeat="star in stars track by $index">{{star}}</span>
 	</div>
 </div>

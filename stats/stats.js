@@ -17,15 +17,6 @@ angular.module('myApp.stats', ['ngRoute', 'chart.js'])
 	if (isEmpty) { 
 		$location.path('home');
 	} else {
-		$scope.range = function(range) {
-			var ret = [];
-			for(var i = 0; i < range; i++) {
-				ret.push(i);
-			}
-
-			return ret;
-		}
-
 		$scope.languagesCount = [];
 		$scope.languagesLabels = [];
 
@@ -58,6 +49,12 @@ angular.module('myApp.stats', ['ngRoute', 'chart.js'])
 					}
 				}
 			}
+			$scope.stars = [];		
+			for(var i = 0; i < stars; i++){
+				$scope.stars.push('🌟');
+			}
+			console.log(stars);
+
 			languages.sort(function(a, b) {
 				return (a.count < b.count) ? 1 : -1;
 			});
