@@ -1,0 +1,15 @@
+<div id="home" class="wrapper">
+	<div ng-controller="HomeCtrl" class="container text-center">
+		<h1>Welcome to GitHub Galaxy!</h1>
+		<h2>Enter your GitHub id to continue</h2>
+	    <div class="input-group">
+	        <input ng-model="name.text" name="input" type="text" class="form-control input-lg" placeholder="Username">
+	        <span class="input-group-btn">
+	        	<button ng-click="findUser(name)" class="btn btn-default btn-lg" type="button">Go!</button>
+	        </span>
+	    </div>
+	    <div role="alert">
+	        <span ng-show="name.invalid" class="error">This user doesn't exist!</span>
+	    </div>
+	</div>
+</div>

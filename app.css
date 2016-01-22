@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two:400,700);
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.ng-scope {
+  min-height: 100%;
+}
+
+.error {
+  font-size: 1.2em;
+  color: red;
+}
+
+.wrapper {
+  background: url("home/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#home {
+    height: 100vh;
+}
+
+#home h1 {
+  margin-top: 10%;
+  color: #9ce3fd;
+  font-family: 'Lobster Two', cursive;
+  font-size: 6em;
+  font-style: italic;
+}
+
+#home h2 {
+  margin: 10% 0 10px 0;
+  color: #9ce3fd;
+}
+
+#home .input-group {
+  width: 500px;
+  margin: auto;
+}
+
+#stats .container {
+  background-color: rgba(13, 74, 101, 0.8);
+}
+
+#stats h1, h2 {
+  color: white;
+}
+
+#stats h1 {
+  font-size: 6em;
+}
+
+#stats h2 {
+  margin-top: 50px;
+  font-size: 4em;
+}
+
+#stats img {
+  border-radius: 20px;
+}
+
+.container {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  font-size: 2em;
+  color: white;
+}

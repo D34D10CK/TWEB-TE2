@@ -1,0 +1,20 @@
+<div class="wrapper" id="stats">
+	<div class="container text-center">
+		<h1>Stats for {{name}}</h1>
+		<img ng-src="{{avatar}}" width="200"/>
+		<h2>Your 3 favorite languages</h2>
+		<div>
+			<canvas id="doughnut" class="chart chart-doughnut" chart-data="languagesCount" chart-labels="languagesLabels"></canvas>
+		</div> 
+		<h2>The 5 most active repositories you contributed to</h2>
+		<div>
+			<canvas id="bar" class="chart chart-bar" chart-data="reposCommits" chart-labels="reposNames"</canvas>
+		</div>
+		<h2>Your true friends</h2>
+		<ul>
+			<li ng-repeat="friend in friends">{{friend}}</li>
+		</ul>
+		<h2>Your stars</h2>
+		<span ng-repeat="i in range(stars)">🌟</span>
+	</div>
+</div>
