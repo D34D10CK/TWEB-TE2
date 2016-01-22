@@ -53,7 +53,6 @@ angular.module('myApp.stats', ['ngRoute', 'chart.js'])
 			for(var i = 0; i < stars; i++){
 				$scope.stars.push('🌟');
 			}
-			console.log(stars);
 
 			languages.sort(function(a, b) {
 				return (a.count < b.count) ? 1 : -1;
@@ -71,12 +70,9 @@ angular.module('myApp.stats', ['ngRoute', 'chart.js'])
 					res.data.forEach(function(el) {
 						commits += el.contributions;
 					});
-					console.log( repo.name + " " + commits);
 					$scope.reposCommits.push(commits);
 					$scope.reposNames.push(repo.name);
 				});
-				console.log($scope.reposNames);
-				console.log($scope.reposCommits);
 			});
 		});
 		
@@ -106,13 +102,7 @@ angular.module('myApp.stats', ['ngRoute', 'chart.js'])
 						}
 					}
 				}
-				console.log(following);
-				console.log(followers)
-				console.log("friends " +$scope.friends);
 			});
 		});
-
-		//$scope.reposCommits = [4, 5];
-		//$scope.reposNames = ['sdjkasd', 'sdjasd'];
 	}
 }]);
